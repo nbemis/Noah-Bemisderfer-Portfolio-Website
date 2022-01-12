@@ -10,38 +10,37 @@
   <header>
     <h1>Noah Bemisderfer</h1>
     <nav>
-      <ul>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contact</li>
+      <ul class="nav-list">
+        <li class="list-item"><a href="">About Me</a></li>
+        <li class="list-item"><a href="">Projects</a></li>
+        <li class="list-item"><a href="">Comments</a></li>
       </ul>
      <ul class="hamburger-menu">
-       <li></li>
-       <li></li>
-       <li></li>
+       <li class="hamburger-item"></li>
+       <li class="hamburger-item"></li>
+       <li class="hamburger-item"></li>
      </ul>
     </nav>
   </header>
 
-  <section>
-    <div class="">
-      <img src="../images/Noah_Bemisderfer_Headshot.jpg" alt="Noah Bemisderfer Profile Picture">
-      <p>Hi there! My name is Noah Bemisderfer, welcome to my little corner of the Web! It has taken me a long time to get to this point so I am happy to share it with you all!</p>
+  <section id="billboard">
+    <div class="billboard-item">
+      <img id="profile-picture" src="../images/Noah_Bemisderfer_Headshot.jpg" alt="Noah Bemisderfer Profile Picture">
+      <p id="website-intro">Hi there! My name is Noah Bemisderfer, welcome to my little corner of the Web! It has taken me a long time to get to this point so I am happy to share it with you all!</p>
     </div>
   </section>
 
-  <section>
-    <h3>About Me</h3>
-    <div>
-      <h4>Skills</h4>
-      <div>
-        <div>
+  <section id="about-me">
+    <h3 class="section-header">About Me</h3>
+    <div class=" about-card about-me-child" id="about-child-one">
+      <h4>Skills and Socials</h4>
+        <div class="skills-child" id="social-links">
           <a href=""><img src="" alt="LinkedIn"></a>
           <a href=""><img src="" alt="GitHub"></a>
           <a href=""><img src="" alt="YouTube"></a>
         </div>
-        <div>
-          <ul>
+        <div class="skills-child">
+          <ul id="skils-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>Javascript</li>
@@ -49,47 +48,36 @@
             <li>Java</li>
           </ul>
         </div>
-      </div>
     </div>
-    <div>
-      <div>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>C++</li>
-          <li>Java</li>
-        </ul>
-      </div>
-      <div>
+    
+    <div class="about-card about-me-child" id="about-child-two">
         <p>My dream is to become a Full-Stack developer in a company who's goals I believe in and working alongside team that is supportive and focused. I enjoy coding because I enjoy solving problems and working with computers. I believe utilizing computers in a positive way will be able to help others achieve their indidual goals as well as making life more enjoyable and fulfilling.</p>
         <p>In my freetime I like to do logic puzzles, go skateboarding (currently trying to perfect my kickflip and learn tre-flips), and get coffee with friends. I also enjoy music (I am the worlds okayest drummer), philosophy, theology, and the occasional board game night. </p>
-      </div>
     </div>
   </section>
 
   <section>
-    <h3>Projects</h3>
-    <div>
+    <h3 class="section-header">Projects</h3>
+    <div class="projects-card">
       <img src="../images/form-a-story.png" alt="Form-a-story project screenshot"> 
       <p>Codecadmy Project for practicing Form implementations.</p> 
       <button>Read More</button>
     </div>
-    <div>
+    <div class="projects-card">
       <img src="../images/piano-player.png" alt="Piano player project screenshot">
        <p>Codecadmy Project built for practicing Javascript EventListeners.</p>
         <button>Read More</button>
       </div>
-    <div>
+    <div class="projects-card">
       <img src="../images/website-syle-guide.png" alt="Website style guide project">
        <p>Codecadmy Project built for practicing Layouts and style.</p>
         <button>Read More</button>
       </div>
   </section>
 
-  <section>
-    <div>
-      <h3>Leave a Comment!</h3>
+  <section id="comments-section">
+    <div class="comments-form-contatiner">
+      <h3 class="section-header">Leave a Comment!</h3>
         <form action="GET">
           <label for="name">Name:</label>
           <input type="text" name="name" id="name">
@@ -109,7 +97,7 @@
   </section>
 
   <footer>
-    <div class="container">
+    <div class="footer-container">
       <div class="copyright">
         site created by <a href="">Noah Bemisderfer</a>
       </div>
