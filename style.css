@@ -142,7 +142,7 @@ cursor: pointer;
 
 /* Billboard Section */
 #billboard{
-  background-image: url(/images/sanAntonioAtDusk.jpg);
+  background-image: url(images/sanAntonioAtDusk.jpg);
   background-size: cover;
 
   padding: 15px 0px;
