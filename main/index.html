@@ -1,106 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Bemisderfer - Web Dev</title>
+
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+
 </head>
+
 <body>
   <header>
-    <h1>Noah Bemisderfer</h1>
-    <nav>
-      <ul class="nav-list">
-        <li class="list-item"><a href="">About Me</a></li>
-        <li class="list-item"><a href="">Projects</a></li>
-        <li class="list-item"><a href="">Comments</a></li>
+    <h1> <a href="#">Noah Bemisderfer</a> </h1>
+    <nav class="main-nav">
+      <ul id="main-nav-list">
+        <li class="list-item"><a href="#about-me">About Me</a></li>
+        <li class="list-item"><a href="#projects">Projects</a></li>
+        <li class="list-item"><a href="#comments">Comments</a></li>
       </ul>
-     <ul class="hamburger-menu">
-       <li class="hamburger-item"></li>
-       <li class="hamburger-item"></li>
-       <li class="hamburger-item"></li>
-     </ul>
     </nav>
+    <div class="hamburger-menu" onclick="toggleMenu(this)">
+      <div class="hamburger-item bar1"></div>
+      <div class="hamburger-item bar2"></div>
+      <div class="hamburger-item bar3"></div>
+    </div>
+    <div id="mobile-nav">
+      <!-- <ul id="moblie-nav-list">
+        <li class="list-item"><a href="#about-me">About Me</a></li>
+        <li class="list-item"><a href="#projects">Projects</a></li>
+        <li class="list-item"><a href="#comments">Comments</a></li>
+      </ul> -->
+    </div>
   </header>
 
-  <section id="billboard">
-    <div class="billboard-item">
-      <img id="profile-picture" src="../images/Noah_Bemisderfer_Headshot.jpg" alt="Noah Bemisderfer Profile Picture">
-      <p id="website-intro">Hi there! My name is Noah Bemisderfer, welcome to my little corner of the Web! It has taken me a long time to get to this point so I am happy to share it with you all!</p>
-    </div>
-  </section>
-
-  <section id="about-me">
-    <h3 class="section-header">About Me</h3>
-    <div class=" about-card about-me-child" id="about-child-one">
-      <h4>Skills and Socials</h4>
-        <div class="skills-child" id="social-links">
-          <a href=""><img src="" alt="LinkedIn"></a>
-          <a href=""><img src="" alt="GitHub"></a>
-          <a href=""><img src="" alt="YouTube"></a>
-        </div>
-        <div class="skills-child">
-          <ul id="skils-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>C++</li>
-            <li>Java</li>
-          </ul>
-        </div>
-    </div>
-    
-    <div class="about-card about-me-child" id="about-child-two">
-        <p>My dream is to become a Full-Stack developer in a company who's goals I believe in and working alongside team that is supportive and focused. I enjoy coding because I enjoy solving problems and working with computers. I believe utilizing computers in a positive way will be able to help others achieve their indidual goals as well as making life more enjoyable and fulfilling.</p>
-        <p>In my freetime I like to do logic puzzles, go skateboarding (currently trying to perfect my kickflip and learn tre-flips), and get coffee with friends. I also enjoy music (I am the worlds okayest drummer), philosophy, theology, and the occasional board game night. </p>
-    </div>
-  </section>
-
-  <section>
-    <h3 class="section-header">Projects</h3>
-    <div class="projects-card">
-      <img src="../images/form-a-story.png" alt="Form-a-story project screenshot"> 
-      <p>Codecadmy Project for practicing Form implementations.</p> 
-      <button>Read More</button>
-    </div>
-    <div class="projects-card">
-      <img src="../images/piano-player.png" alt="Piano player project screenshot">
-       <p>Codecadmy Project built for practicing Javascript EventListeners.</p>
-        <button>Read More</button>
+  <main>
+    <section id="billboard">
+      <div class="card billboard-item">
+        <img id="profile-picture" src="../images/resized_Noah_Bemisderfer_Headshot.jpg"
+          alt="Noah Bemisderfer Profile Picture">
+        <p class="website-intro">Hi there! My name is Noah Bemisderfer.</p> 
+        <p class="website-intro">Welcome to my little
+          corner of the Web! It has taken
+          me a long time to get to this point so I am happy to share it with you all!</p>
       </div>
-    <div class="projects-card">
-      <img src="../images/website-syle-guide.png" alt="Website style guide project">
-       <p>Codecadmy Project built for practicing Layouts and style.</p>
-        <button>Read More</button>
-      </div>
-  </section>
+    </section>
 
-  <section id="comments-section">
-    <div class="comments-form-contatiner">
-      <h3 class="section-header">Leave a Comment!</h3>
+    <section id="about-me">
+      <h2 class="section-header">About Me</h2>
+      <div class="about-me-container">
+        <div class="card about-card about-me-child" id="about-child-one">
+          <h4>Skills and Socials</h4>
+          <div class="ss-container">
+            <div class="skills-child" id="social-links">
+              <a href="https://www.linkedin.com/in/noah-bemisderfer-a91b28108/"><img src="../images/linkedin-logo.jpg"
+                  alt="LinkedIn" class="socials-img"></a>
+              <a href="https://github.com/nbemis"><img src="../images/GitHub-logo.jpg" alt="GitHub"
+                  class="socials-img"></a>
+              <a href="https://www.youtube.com/channel/UCbNMLzV5hrBsGKpQte96EUw"><img src="../images/YoutubeLogo.jpg"
+                  alt="YouTube" class="socials-img"></a>
+            </div>
+            <div class="skills-child">
+              <h5>Working Knowledge in:</h5>
+              <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+              <h5>Familiar with:</h5>
+              <ul class="skills-list">
+                <li>C++</li>
+                <li>Java</li>
+                <li>Angular</li>
+                <li>Python</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card about-me-child" id="about-child-two">
+          <p>My dream is to become a Full-Stack developer at a company who's goals I believe in and working alongside
+            team
+            that is supportive and focused. I enjoy coding because I enjoy solving problems and working with computers.
+            I
+            believe utilizing computers in a positive way will be able to help others achieve their indidual goals as
+            well
+            as making life more enjoyable and fulfilling.</p>
+          <p>In my freetime I like to do logic puzzles, go skateboarding (currently trying to perfect my kickflip and
+            learn tre-flips), and get coffee with friends. I also enjoy music (I am the worlds okayest drummer),
+            philosophy, theology, and the occasional board game night. </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-header">Most Recent Projects</h2>
+      <div class="projects-wrapper">
+        <div class="card projects-card">
+          <img src="../images/form-a-story.png" alt="Form-a-story project screenshot" class="project-img">
+          <p>Codecadmy Project for practicing Form implementations.</p>
+          <button class="read-more-button">Vist Code</button>
+        </div>
+        <div class="card projects-card">
+          <img src="../images/piano-player.png" alt="Piano player project screenshot" class="project-img">
+          <p>Codecadmy Project built for practicing Javascript EventListeners.</p>
+          <button class="read-more-button">Vist Code</button>
+        </div>
+        <div class="card projects-card">
+          <img src="../images/website-syle-guide.png" alt="Website style guide project" class="project-img">
+          <p>Codecadmy Project built for practicing Layouts and style.</p>
+          <button class="read-more-button">Vist Code</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="comments">
+      <h2 class="section-header">Leave a Comment!</h2>
+      <div class="comments-form-container">
         <form action="GET">
           <label for="name">Name:</label>
-          <input type="text" name="name" id="name">
+          <input class="input-field" type="text" name="name" id="name">
 
           <label for="subject">Subject:</label>
-          <input type="text" name="subject" id="subject">
+          <input class="input-field" type="text" name="subject" id="subject">
 
           <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
+          <input class="input-field" type="text" name="email" id="email">
 
           <label for="comments">Comments:</label>
-          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          <textarea class="input-field" name="comments" id="comments" cols="30" rows="10"></textarea>
 
           <input id="submit-btn" class="btn" type="submit" value="Send">
         </form>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-container">
       <div class="copyright">
-        site created by <a href="">Noah Bemisderfer</a>
+        Site created by <a id="footer-link"href="https://github.com/nbemis">Noah Bemisderfer</a>
       </div>
   </footer>
+  <script>
+    function toggleMenu(x) {
+      // let myVar = document.getElementById('mobile-nav');
+      // myVar.classList.toggle('display');
+      x.classList.toggle('change');
+    }
+    </script>
 </body>
+
 </html>
