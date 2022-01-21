@@ -35,7 +35,7 @@
       </ul> -->
     </div>
   </header>
-
+  
   <main>
     <section id="billboard">
       <div class="card billboard-item">
@@ -52,15 +52,12 @@
       <h2 class="section-header">About Me</h2>
       <div class="about-me-container">
         <div class="card about-card about-me-child" id="about-child-one">
-          <h4>Skills and Socials</h4>
+          <h4>Technical Skills</h4>
           <div class="ss-container">
-            <div class="skills-child" id="social-links">
-              <a href="https://www.linkedin.com/in/noah-bemisderfer-a91b28108/"><img src="images/linkedin-logo.jpg"
-                  alt="LinkedIn" class="socials-img"></a>
-              <a href="https://github.com/nbemis"><img src="images/GitHub-logo.jpg" alt="GitHub"
-                  class="socials-img"></a>
-              <a href="https://www.youtube.com/channel/UCbNMLzV5hrBsGKpQte96EUw"><img src="images/YoutubeLogo.jpg"
-                  alt="YouTube" class="socials-img"></a>
+            <div class="skills-child" id="skill-icons">
+                  <i class="fab fa-html5 skill-item"></i>
+                  <i class="fab fa-css3-alt skill-item"></i>
+                  <i class="fab fa-js skill-item"></i>
             </div>
             <div class="skills-child">
               <h5>Working Knowledge in:</h5>
@@ -85,7 +82,7 @@
             team
             that is supportive and focused. I enjoy coding because I enjoy solving problems and working with computers.
             I
-            believe utilizing computers in a positive way will be able to help others achieve their indidual goals as
+            believe utilizing computers in a positive way will be able to help others achieve their individual goals as
             well
             as making life more enjoyable and fulfilling.</p>
           <p>In my freetime I like to do logic puzzles, go skateboarding (currently trying to perfect my kickflip and
@@ -116,24 +113,13 @@
       </div>
     </section>
 
-    <section id="comments">
-      <h2 class="section-header">Leave a Comment!</h2>
-      <div class="comments-form-container">
-        <form action="GET">
-          <label for="name">Name:</label>
-          <input class="input-field" type="text" name="name" id="name">
-
-          <label for="subject">Subject:</label>
-          <input class="input-field" type="text" name="subject" id="subject">
-
-          <label for="email">Email:</label>
-          <input class="input-field" type="text" name="email" id="email">
-
-          <label for="comments">Comments:</label>
-          <textarea class="input-field" name="comments" id="comments" cols="30" rows="10"></textarea>
-
-          <input id="submit-btn" class="btn" type="submit" value="Send">
-        </form>
+    <section id="contact">
+      <h2 class="section-header">Contact Me!</h2>
+      <div class="contact-container">
+       <p>Feel free to reach me via the following socials:</p>
+       <a href="https://www.linkedin.com/in/noah-bemisderfer-a91b28108/"><i class="fab fa-linkedin icon social-icon" style="color: #2868b2;"></i></a>        
+       <a href="https://github.com/nbemis"><i class="fab fa-github social-icon" style="color: black;"></i></a>
+       <a href="mailto: nbemisderfer@gmail.com"><i class="fas fa-envelope social-icon" style="color: brown;"></i></a>
       </div>
     </section>
   </main>
@@ -151,6 +137,7 @@
       x.classList.toggle('change');
     }
     </script>
+    <script src="https://kit.fontawesome.com/0a4875674b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
