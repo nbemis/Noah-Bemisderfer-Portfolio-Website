@@ -22,26 +22,14 @@
         <li class="list-item"><a href="#comments">Comments</a></li>
       </ul>
     </nav>
-    <div class="hamburger-menu" onclick="toggleMenu(this)">
-      <div class="hamburger-item bar1"></div>
-      <div class="hamburger-item bar2"></div>
-      <div class="hamburger-item bar3"></div>
-    </div>
-    <div id="mobile-nav">
-      <!-- <ul id="moblie-nav-list">
-        <li class="list-item"><a href="#about-me">About Me</a></li>
-        <li class="list-item"><a href="#projects">Projects</a></li>
-        <li class="list-item"><a href="#comments">Comments</a></li>
-      </ul> -->
-    </div>
   </header>
-  
+
   <main>
     <section id="billboard">
       <div class="card billboard-item">
         <img id="profile-picture" src="images/resized_Noah_Bemisderfer_Headshot.jpg"
           alt="Noah Bemisderfer Profile Picture">
-        <p class="website-intro">Hi there! My name is Noah Bemisderfer.</p> 
+        <p class="website-intro">Hi there! My name is Noah Bemisderfer.</p>
         <p class="website-intro">Welcome to my little
           corner of the Web! It has taken
           me a long time to get to this point so I am happy to share it with you all!</p>
@@ -55,9 +43,9 @@
           <h4>Technical Skills</h4>
           <div class="ss-container">
             <div class="skills-child" id="skill-icons">
-                  <i class="fab fa-html5 skill-item"></i>
-                  <i class="fab fa-css3-alt skill-item"></i>
-                  <i class="fab fa-js skill-item"></i>
+              <i class="fab fa-html5 skill-item"></i>
+              <i class="fab fa-css3-alt skill-item"></i>
+              <i class="fab fa-js skill-item"></i>
             </div>
             <div class="skills-child">
               <h5>Working Knowledge in:</h5>
@@ -98,16 +86,32 @@
         <div class="card projects-card">
           <img src="images/form-a-story.png" alt="Form-a-story project screenshot" class="project-img">
           <p>Codecadmy Project for practicing Form implementations.</p>
+          <strong>Built with:</strong>
+          <div id="project-tech-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
           <a class="read-more-button btn" href="https://github.com/nbemis/codecademy-form-a-story">Vist Code</a>
         </div>
         <div class="card projects-card">
           <img src="images/piano-player.png" alt="Piano player project screenshot" class="project-img">
           <p>Codecadmy Project built for practicing Javascript EventListeners.</p>
+          <strong>Built with:</strong>
+          <div id="project-tech-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js "></i>
+          </div>
           <a class="read-more-button btn" href="https://github.com/nbemis/codecademy-piano-player">Vist Code</a>
         </div>
         <div class="card projects-card">
           <img src="images/website-syle-guide.png" alt="Website style guide project" class="project-img">
           <p>Codecadmy Project built for practicing Layouts and style.</p>
+          <strong>Built with:</strong>
+          <div id="project-tech-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div>
           <a class="read-more-button btn" href="https://github.com/nbemis/codecademy-web-design-system">Vist Code</a>
         </div>
       </div>
@@ -116,10 +120,11 @@
     <section id="contact">
       <h2 class="section-header">Contact Me!</h2>
       <div class="contact-container">
-       <p>Feel free to reach me via the following socials:</p>
-       <a href="https://www.linkedin.com/in/noah-bemisderfer-a91b28108/"><i class="fab fa-linkedin icon social-icon" style="color: #2868b2;"></i></a>        
-       <a href="https://github.com/nbemis"><i class="fab fa-github social-icon" style="color: black;"></i></a>
-       <a href="mailto: nbemisderfer@gmail.com"><i class="fas fa-envelope social-icon" style="color: brown;"></i></a>
+        <p>Feel free to reach me via the following socials:</p>
+        <a href="https://www.linkedin.com/in/noah-bemisderfer-a91b28108/"><i class="fab fa-linkedin icon social-icon"
+            style="color: #2868b2;"></i></a>
+        <a href="https://github.com/nbemis"><i class="fab fa-github social-icon" style="color: black;"></i></a>
+        <a href="mailto: nbemisderfer@gmail.com"><i class="fas fa-envelope social-icon" style="color: brown;"></i></a>
       </div>
     </section>
   </main>
@@ -127,17 +132,10 @@
   <footer>
     <div class="footer-container">
       <div class="copyright">
-        Site created by <a id="footer-link"href="https://github.com/nbemis">Noah Bemisderfer</a>
+        Site created by <a id="footer-link" href="https://github.com/nbemis">Noah Bemisderfer</a>
       </div>
   </footer>
-  <script>
-    function toggleMenu(x) {
-      // let myVar = document.getElementById('mobile-nav');
-      // myVar.classList.toggle('display');
-      x.classList.toggle('change');
-    }
-    </script>
-    <script src="https://kit.fontawesome.com/0a4875674b.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0a4875674b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

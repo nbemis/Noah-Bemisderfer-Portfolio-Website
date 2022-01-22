@@ -42,8 +42,6 @@ p, a, li, span, label, input, textarea{
   color: var(--mainText);
 }
 
-
-
 button, .btn{
   padding: 5px 5px;
   border: none;
@@ -68,7 +66,6 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: var(--mainColor1);
-  /* border-bottom: var(--borderColor) solid 2px; */
   box-shadow: 0px 5px 5px hsl(0, 0%, 0%, .7) ;
   padding: 0px 15px;
   position: fixed;
@@ -88,51 +85,11 @@ main{
 #mobile-nav{
   position:fixed;
 } 
-/* 
-.display{
-  padding:0;
-  margin:0;
-  top:0;
-  right:0;
-  width: 30%;
-  height: 100%;
-  background-color: #6B4E71;
-  z-index: 101;
-} */
-
-.hamburger-menu{
-height: 30px;
-width: 25px;
-cursor: pointer;
-}
-
-.hamburger-item{
-  background-color: black;
-  margin:  4px 0px;
-  border: black solid ;
-}
-
 
 .change{
   z-index: 102;
 }
 
-/* Rotate first bar */
-/* .change .bar1 {
-  -webkit-transform: rotate(-48deg) translate(-4px, 4px) ;
-  transform: rotate(-48deg) translate(-4px, 4px) ;
-} */
-
-/* Fade out the second bar */
-/* .change .bar2 {
-  opacity: 0;
-} */
-
-/* Rotate last bar */
-/* .change .bar3 {
-  -webkit-transform: rotate(48deg) translate(-10px, -8px) ;
-  transform: rotate(48deg) translate(-10px, -8px) ;
-} */
 
 /* Billboard Section */
 #billboard{
@@ -164,12 +121,6 @@ cursor: pointer;
   margin: 10px 10px;
   text-align: center;
 }
-
-/* #fancy-intro{
-  font-size: 1.5rem;
-  display: inline-block;
-  text-align: inherit;
-} */
 
 /* About Me Section */
 .section-header{
@@ -204,7 +155,8 @@ cursor: pointer;
 
 #about-child-one{
   height: 325px;
-  min-width: 400px;
+  min-width: 350px;
+  margin: 0px 10px;
 
   background-color: var(--mainColor4);
   overflow: hidden;
@@ -272,7 +224,7 @@ list-style-type:disc;
 }
 
 .projects-wrapper{
-  min-height: 1000px;
+  min-height: 1150px;
   
   display: flex;
   flex-direction: column;
@@ -281,7 +233,9 @@ list-style-type:disc;
 }
 
 .projects-card{
+  position: relative;
   width: 300px;
+  min-height: 350px;
   background-color: var(--mainColor5);
   overflow: hidden;
   box-shadow: 4px 3px 5px hsl(0, 0%, 0%, .4);
@@ -293,26 +247,39 @@ list-style-type:disc;
   width: 100%;
 }
 
-.projects-card p{
+.projects-card p, strong{
   color: var(--secondaryText);
   padding: 0 10px;
 }
 
+#project-tech-container{
+  display: inline-block;
+}
+
+#project-tech-container .fab{
+  font-size: 2.25rem;
+  margin-left: 10px;
+
+}
+
 .read-more-button{
-  margin-bottom: 10px;
-  margin-right: 10px;
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+
+  max-height: 35px;
   background-color: var(--mainColor1);
   color: azure;
-  float: right;
+  
 }
 
 .contact-container{
   display: block;
-  max-width: 500px;
+  max-width: 400px;
   min-height: 200px;
   margin: 0 auto;
   border: 3px solid var(--mainColor5);
-  padding: 15px;
   border-radius: 5px;
   background-color: var(--mainColor4);
   margin-top: 10px;
@@ -422,6 +389,7 @@ footer{
 
   #about-child-one{
     margin-left: 50px;
+    min-width: 400px;
     max-width: 600px;
     min-height: 325px;
   }
@@ -441,21 +409,14 @@ footer{
   }
 
   .projects-card{
-    margin: 0px 10px;
+    margin: 0px 50px;
     min-width: 300px;
     height: 400px;
-  }
-
-  .read-more-button{
-    margin-bottom: 0px;
-    margin-right: 0px;
-    float: none;
     position: relative;
-    top: 70px;
-    left: 200px;
   }
 
   .contact-container{
+    max-width: 500px;
     min-height: 300px;
   }
 
